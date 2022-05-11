@@ -5,11 +5,13 @@ namespace GameUnits
     {
         public int AttackPower{get;}
         public int XP{get; set;}
+        public override int Health { get => base.Health+XP; set => base.Health = value; }
+        public override int Value => AttackPower +XP;
 
-        public  MilitaryUnit(int movement, int health, int attackPower) : base(movement, health)
+        public  MilitaryUnit(int movement, int health, int attackPower, int xp) : base(movement, health)
         {
             AttackPower = attackPower;
-            XP = 0;
+            XP = xp;
         }
 
         public void Attack()
