@@ -17,9 +17,11 @@ namespace GameUnits
 
             Console.WriteLine($"The military unit has {units[0].Health}" + 
             $" health and a value of {units[0].Value}.");
+            Console.WriteLine(units[0].ToString());
 
-            Console.WriteLine($"The military unit has {units[1].Health}" + 
+            Console.WriteLine($"The settler unit has {units[1].Health}" + 
             $" health and a value of {units[1].Value}.");
+            Console.WriteLine(units[1].ToString());
         }
     }
 
