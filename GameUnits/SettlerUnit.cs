@@ -1,9 +1,10 @@
 using System;
 namespace GameUnits
 {
-    public class SettlerUnit
+    public class SettlerUnit : Unit
     {
         public SettlerUnit(int mov, int health):base(mov, health){}
+        public override int Value => 5;
 
         public void Settle(Vector2 v)
         {
