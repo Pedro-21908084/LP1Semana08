@@ -15,7 +15,8 @@ namespace GameUnits
 
         public void Move(Vector2 v)
         {
-            Console.WriteLine($"Moved {v.x}tiles horizontally and {v.y} tiles vertically");
+            Console.WriteLine($"Moved {v.x * movement} tiles horizontally and " +
+            $" {v.y * movement} tiles vertically");
         }
     }
 }
