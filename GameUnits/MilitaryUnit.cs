@@ -18,5 +18,10 @@ namespace GameUnits
         {
             Console.WriteLine($"I'm attacking with {AttackPower} attack power!");
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + $", {AttackPower} attack power and {XP} XP";
+        }
     }
 }

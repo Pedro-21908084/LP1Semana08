@@ -18,5 +18,10 @@ namespace GameUnits
             Console.WriteLine($"Moved {v.x * movement} tiles horizontally and " +
             $" {v.y * movement} tiles vertically");
         }
+
+        public override string ToString()
+        {
+            return $"This unit has {Health} health, {Value} value";
+        }
     }
 }
